@@ -1,110 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Work Day Scheduler</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-  <title>Work Day Scheduler</title>
-</head>
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <form class="row">
+        <div class="col-1 hour" id="09">9 AM</div>
+        <div class="col-10 description p-0"><textarea class="task-input"></textarea></div>
+        <button class="col-1 saveBtn"><i class="far fa-save fa-3x"></i></button>
+      </form>
+      <form class="row">
+        <div class="col-1 hour" id="10">10 AM</div>
+        <div class="col-10 description p-0"><textarea class="task-input"></textarea></div>
+        <button class="col-1 saveBtn"><i class="far fa-save fa-3x"></i></button>
+      </form>
+      <form class="row">
+        <div class="col-1 hour" id="11">11 AM</div>
+        <div class="col-10 description p-0"><textarea class="task-input"></textarea></div>
+        <button class="col-1 saveBtn"><i class="far fa-save fa-3x"></i></button>
+      </form>
+      <form class="row">
+        <div class="col-1 hour" id="12">12 PM</div>
+        <div class="col-10 description p-0"><textarea class="task-input"></textarea></div>
+        <button class="col-1 saveBtn"><i class="far fa-save fa-3x"></i></button>
+      </form>
+      <form class="row">
+        <div class="col-1 hour" id="01">1 PM</div>
+        <div class="col-10 description p-0"><textarea class="task-input"></textarea></div>
+        <button class="col-1 saveBtn"><i class="far fa-save fa-3x"></i></button>
+      </form>
+      <form class="row">
+        <div class="col-1 hour" id="02">2 PM</div>
+        <div class="col-10 description p-0"><textarea class="task-input"></textarea></div>
+        <button class="col-1 saveBtn"><i class="far fa-save fa-3x"></i></button>
+      </form>
+      <form class="row">
+        <div class="col-1 hour" id="03">3 PM</div>
+        <div class="col-10 description p-0"><textarea class="task-input"></textarea></div>
+        <button class="col-1 saveBtn"><i class="far fa-save fa-3x"></i></button>
+      </form>
+      <form class="row">
+        <div class="col-1 hour" id="04">4 PM</div>
+        <div class="col-10 description p-0"><textarea class="task-input"></textarea></div>
+        <button class="col-1 saveBtn"><i class="far fa-save fa-3x"></i></button>
+      </form>
+      <form class="row">
+        <div class="col-1 hour" id="05">5 PM</div>
+        <div class="col-10 description p-0"><textarea class="task-input"></textarea></div>
+        <button class="col-1 saveBtn"><i class="far fa-save fa-3x"></i></button>
+      </form>
+    </div>
 
-<body>
-  <header class="jumbotron">
-    <h1 class="display-3">Work Day Scheduler</h1>
-    <p class="lead">A simple calendar app for scheduling your work day</p>
-    <p id="currentDay" class="lead"></p>
-  </header>
-  <div class="container">
-    <div class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text" id="9AM-addon">9AM</span>
-      </div>
-      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
-        aria-describedby="button-addon2" />
-      <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-          Button
-        </button>
-      </div>
-    </div>
-    <div class="input-group">
-      <div class="input-group-prepend row">
-        <span class="input-group-text" id="9AM-addon">9AM</span>
-      </div>
-      <input class="form-control row" type="text" name="" placeholder="Recipient's text" aria-label="Recipient's "
-        aria-describedby="my-addon" />
-      <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-          Button
-        </button>
-      </div>
-    </div>
-    <div class="input-group">
-      <div class="input-group-prepend row">
-        <span class="input-group-text" id="10AM-addon">10AM</span>
-      </div>
-      <input class="form-control row" type="text" name="" placeholder="Recipient's text" aria-label="Recipient's "
-        aria-describedby="my-addon" />
-    </div>
-    <div class="input-group">
-      <div class="input-group-prepend row">
-        <span class="input-group-text" id="11AM-addon">11AM</span>
-      </div>
-      <input class="form-control row" type="text" name="" placeholder="Recipient's text" aria-label="Recipient's "
-        aria-describedby="my-addon" />
-    </div>
-    <div class="input-group">
-      <div class="input-group-prepend row">
-        <span class="input-group-text" id="12PM-addon">12PM</span>
-      </div>
-      <input class="form-control row" type="text" name="" placeholder="Recipient's text" aria-label="Recipient's "
-        aria-describedby="my-addon" />
-    </div>
-    <div class="input-group">
-      <div class="input-group-prepend row">
-        <span class="input-group-text" id="1PM-addon">1PM</span>
-      </div>
-      <input class="form-control row" type="text" name="" placeholder="Recipient's text" aria-label="Recipient's "
-        aria-describedby="my-addon" />
-    </div>
-    <div class="input-group">
-      <div class="input-group-prepend row">
-        <span class="input-group-text" id="2PM-addon">2PM</span>
-      </div>
-      <input class="form-control row" type="text" name="" placeholder="Recipient's text" aria-label="Recipient's "
-        aria-describedby="my-addon" />
-    </div>
-    <div class="input-group">
-      <div class="input-group-prepend row">
-        <span class="input-group-text" id="3PM-addon">3PM</span>
-      </div>
-      <input class="form-control row" type="text" name="" placeholder="Recipient's text" aria-label="Recipient's "
-        aria-describedby="my-addon" />
-    </div>
-    <div class="input-group">
-      <div class="input-group-prepend row">
-        <span class="input-group-text" id="4PM-addon">4PM</span>
-      </div>
-      <input class="form-control row" type="text" name="" placeholder="Recipient's text" aria-label="Recipient's "
-        aria-describedby="my-addon" />
-    </div>
-    <div class="input-group">
-      <div class="input-group-prepend row">
-        <span class="input-group-text" id="5PM-addon">5PM</span>
-      </div>
-      <input class="form-control row" type="text" name="" placeholder="Recipient's text" aria-label="Recipient's "
-        aria-describedby="my-addon" />
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="time.js"></script>
+  </body>
 </html>
