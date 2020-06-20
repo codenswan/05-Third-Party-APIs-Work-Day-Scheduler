@@ -1,18 +1,25 @@
-const thisHour = $(".hour").attr("id");
+const thisHour = $(".hour").text();
 const taskInput = $(".task-input");
-// console.log(thisHour);
-// console.log(moment().format("hh"));
+console.log(thisHour);
+console.log(moment().format("h A"));
 
 function colourCode(){
-  for (let index = 0; index < taskInput.length; index++) {
-    const element = taskInput[index];
-    console.log(element);
+  for (let index = 0; index < thisHour.length; index++) {
+    const hoursArr = thisHour[index];
+    console.log(hoursArr)
+
+    if (moment().format("h A") === thisHour) {
+      $(taskInput[index]).addClass("present")
+    } else if (moment().format("h A") < thisHour) {
+      $(taskInput[index]).addClass("past")
+    } else(moment().format("h A") > thisHour) 
+      $(taskInput[index]).addClass("future")
+    
   }
-  
-  if (moment().format("hh") === thisHour) {
-    taskInput[index].addClass("present")
-  } 
+
 }
+  
+
 
 colourCode()
 
