@@ -1,27 +1,39 @@
-const thisHour = $(".hour").text();
-const taskInput = $(".task-input");
-console.log(thisHour);
-console.log(moment().format("h A"));
+// const thisHour = parseInt($(".hour").text());
+// const taskInput = $(".task-input");
+// console.log(thisHour);
+// console.log(parseInt(moment().format("h")));
 
-function colourCode(){
-  for (let index = 0; index < thisHour.length; index++) {
-    const hoursArr = thisHour[index];
-    console.log(hoursArr)
 
-    if (moment().format("h A") === thisHour) {
-      $(taskInput[index]).addClass("present")
-    } else if (moment().format("h A") < thisHour) {
-      $(taskInput[index]).addClass("past")
-    } else(moment().format("h A") > thisHour) 
-      $(taskInput[index]).addClass("future")
-    
+      // if (parseInt(moment().format("h")) === thisHour) {
+      //   taskInput.addClass("present")
+      // } else if (parseInt(moment().format("h")) < thisHour) {
+      //   taskInput.addClass("past")
+      // } else(parseInt(moment().format("h")) > thisHour)
+      //   taskInput.addClass("future")
+
+const thisHour = parseInt(moment().format("HH"))
+
+$("textarea").each(function() {
+      
+  let hourColour = parseInt($(this).attr("id"));
+  if (hourColour === thisHour) {
+    $(this).addClass("present")
   }
+  if (hourColour > thisHour) {
+    $(this).addClass("future")
+  }
+  if (hourColour < thisHour) {
+    $(this).addClass("past")
+  }
+})
 
-}
+$(".saveBtn").on("click", function () { 
+  let tasks = 
+})
   
 
 
-colourCode()
+// colourCode()
 
 // assign colour coding to the textarea depending on the current time
   //give each textarea an id to represent the hour

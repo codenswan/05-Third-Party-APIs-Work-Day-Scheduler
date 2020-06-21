@@ -112,5 +112,5 @@ dayPlannerRows.forEach(function (thisHour) {
 
 $(".saveBtn").on("click", function(event) {
     event.preventDefault();
-    let save
+    let saveTasks = $(this).
 });
