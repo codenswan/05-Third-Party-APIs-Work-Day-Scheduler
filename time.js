@@ -1,3 +1,4 @@
+//this separate js file was added so the time in the jumbotron would be update each second
 var datetime = null,
     date = null;
 
