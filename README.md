@@ -11,3 +11,7 @@ This app meets all acceptance criteria outlined in story.md
 Things to improve
 - the page is not fully reponsive so doesn't look good on a mobile.
 - the styling could be improved to make the user experience more appealing.
+
+Screenshot of app with only grey colour coding:
+
+![](Assets/Screen%20Shot%202020-06-22%20at%209.55.17%20pm.png)
