@@ -15,6 +15,8 @@ https://codenswan.github.io/05-Third-Party-APIs-Work-Day-Scheduler/
 - the page is not fully reponsive so doesn't look good on a mobile.
 - the styling could be improved to make the user experience more appealing.
 
+## Screenshot
+
 Screenshot of app with only grey colour coding:
 
 ![](Assets/Screen%20Shot%202020-06-22%20at%209.55.17%20pm.png)
