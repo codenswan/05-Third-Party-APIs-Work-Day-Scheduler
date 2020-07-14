@@ -11,7 +11,7 @@ This app meets all acceptance criteria outlined in story.md
 ## Deployed app
 https://codenswan.github.io/05-Third-Party-APIs-Work-Day-Scheduler/
 
-##Things to improve
+## Things to improve
 - the page is not fully reponsive so doesn't look good on a mobile.
 - the styling could be improved to make the user experience more appealing.
 
